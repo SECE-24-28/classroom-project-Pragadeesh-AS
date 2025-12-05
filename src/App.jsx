@@ -8,6 +8,7 @@ import TrustedComponent from "./trusted/trusted-component";
 import GetInTouchComponent from "./get-in-touch/get-in-touch-component";
 import ImpactComponent from "./impact/impact-component";
 import OurPromiseComponent from "./our-promise/our-promise-component";
+import FlexWrapComponent from "./flex-wrap-example/flex-wrap-component";
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
       {/* <PositionComponent/> */}
       {/* <TrustedComponent/> */}
       {/* <GetInTouchComponent/> */}
-      <ImpactComponent/>
+      {/* <ImpactComponent/> */}
       <OurPromiseComponent/>
+      {/* <FlexWrapComponent/> */}
     </div>
   );
 }

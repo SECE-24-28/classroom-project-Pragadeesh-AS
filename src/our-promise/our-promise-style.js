@@ -117,4 +117,7 @@ export const OurPromiseStyle = styled.div`
     font-size: 40px;
     color:rgb(50, 199, 102);
     }
+    .flex{
+     display: flex;  
+    flex-wrap: wrap;}
 `;
