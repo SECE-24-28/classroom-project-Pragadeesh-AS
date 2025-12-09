@@ -15,6 +15,10 @@ import FourOFourComponent from "./404-component/404-component";
 import UseStateComponent from "./usestate-1st/use-state-component";
 import UsestateformComponent from "./use-state-form/use-state-form-component";
 import RegisterFormComponent from "./register-form/register-form-component";
+import FetchApiComponent from "./fetch-api/fetch-api-component";
+import UseEffectComponent from "./use-effect-practice/use-effect-practice";
+import UseEffectComponentTwo from "./use-effect-practice/use-effect-practice-2";
+
 
 // function App() {
 //   //  const arr1 = [
@@ -109,7 +113,10 @@ function App() {
 
         {/* 404 PAGE */}
         <Route path="*" element={<FourOFourComponent />} />
-      </Routes>
+        <Route path="/api-fetch" element={<FetchApiComponent />} />     
+        <Route path="/api-use-effect-practice" element={<UseEffectComponent />} />     
+        <Route path="/api-use-effect-practice-2" element={<UseEffectComponentTwo />} />     
+         </Routes>
     </div>
   );
 }
