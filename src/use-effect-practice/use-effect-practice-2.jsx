@@ -18,4 +18,4 @@ const UseEffectPracticeTwo = () => {
     </div>
   );
 };
-export default UseEffectPracticeTwo
+export default UseEffectPracticeTwo;
