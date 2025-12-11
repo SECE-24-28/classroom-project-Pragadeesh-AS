@@ -1,10 +1,9 @@
 const User = require("../models/user");
 exports.createUser = async (req, res) => {
   try {
-    const { details } = req.body;
-    const creatUser = await User.insertOne({
+    const { firstName, email } = req.body;
+    await User.insertOne({
       firstName: firstName,
-      lastName: lastName,
       email: email,
     });
     return res.status(200).json({
@@ -21,8 +20,11 @@ exports.createUser = async (req, res) => {
 
 exports.createManyUsers = async (req, res) => {
   try {
-    const { details } = req.body;
-    const createUser = await User.insertMany(details);
+    const { firstName, email } = req.body;
+    const createUser = await User.insertOne({
+       firstName: firstName,
+      email: email,
+    });
     return res.status(200).json({
       success: true,
       message: "User is created successfully",
