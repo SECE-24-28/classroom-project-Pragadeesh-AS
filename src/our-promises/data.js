@@ -1,13 +1,17 @@
+//props
+//react router dom
+//useState and useEffect
+//
 import {
   faLaptopCode,
   faMobile,
-  faNetworkWired,
+  // faNetworkWired,
   faPeopleGroup,
   faRightFromBracket,
   faShieldHalved,
 } from "@fortawesome/free-solid-svg-icons";
 
-export const OurpromiseData = [
+export const OurpromisesData = [
   {
     title: "Top Code Quality",
     content:
@@ -40,7 +44,7 @@ export const OurpromiseData = [
     title: "Life-time Support",
     content:
       "Our commitment doesn't end with delivery. If any bugs appear in the future, you can always reach out — we’ve got your back.",
-    icon: faNetworkWired,
+    icon: faShieldHalved,
     color: "rgb(252,41,71)",
   },
   {

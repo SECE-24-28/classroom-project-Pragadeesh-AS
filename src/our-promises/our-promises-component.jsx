@@ -1,21 +1,17 @@
 import React from "react";
-import { OurPromiseStyle } from "./our-promise-style";
+import { OurPromisesStyle } from "./our-promises-style";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { OurpromisesData } from "./data";
 
-import { OurpromiseData } from "./data";
-// import { faLaptopCode, faMobileScreen , faPeopleGroup,faDiamondTurnRight , faShieldHalved,faLifeRing} from '@fortawesome/free-solid-svg-icons';
-const OurPromiseComponent = () => {
-    return (
-        <OurPromiseStyle>
-            <div className="paras">
+const OurPromisesComponent = () => {
+  return (
+    <OurPromisesStyle gapLength="20px">
+      <div className="paras">
         <h1>Our Promise</h1>
-        <p>
-          As part of our high quality service, we'd like to offer something
-          extra too.
-        </p>
+        <p>extra too.</p>
       </div>
       <div className="parent">
-        {OurpromiseData.map((item, index) => {
+        {OurpromisesData.map((item, index) => {
           return (
             <div
               className="child"
@@ -37,8 +33,7 @@ const OurPromiseComponent = () => {
           );
         })}
       </div>
-
-        </OurPromiseStyle>
-    )
+    </OurPromisesStyle>
+  );
 };
-export default OurPromiseComponent;
+export default OurPromisesComponent;
