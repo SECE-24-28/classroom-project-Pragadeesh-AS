@@ -5,11 +5,12 @@ const UserFetchViaEmail = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     const email = e.target.email.value;
+    const mobile = e.target.mobile.value;
     console.log("The email value frontend:", email);
 
     try {
       const pushDetails = await axios.get(
-        `http://localhost:21000/api/v1/User/getUserDetails/${email}`
+        `http://localhost:21000/api/v1/User/getUserDetails/${email}/${mobile}`
       );
       // console.log("The push details:", pushDetails);
 
@@ -30,6 +31,8 @@ const UserFetchViaEmail = () => {
       <form onSubmit={onSubmit}>
         <label htmlFor="email">Email</label>
         <input type="email" id="email" />
+        <label htmlFor="mobile">Mobile</label>
+        <input type="number" id="mobile" />
         <button type="submit">Submit</button>
       </form>
     </div>
