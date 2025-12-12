@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const User = new mongoose.Schema({
+const Admin = new mongoose.Schema({
   firstName: {
     type: String,
     require: true,
@@ -20,19 +20,15 @@ const User = new mongoose.Schema({
     type: String,
     require: true,
   },
-  active: {
-    type: String,
-    require: true,
-  },
   password: {
     type: String,
     require: true,
   },
-  setOfAssignmentsAssigned: [
+  listOfRequest: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "AssignmentCreated",
+      ref: "User",
     },
   ],
 });
-module.exports = mongoose.model("User", User);
+module.exports = mongoose.model("Admin", Admin);
